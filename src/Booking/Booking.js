@@ -43,7 +43,7 @@ export default function Booking() {
                             <label className='label1'>Destination</label>
                         </div>
                         <div className='input1'>
-                            <input className='origin input2' name='origin' placeholder='Departure - Return' type='datetime-local' required></input>
+                            <input className='origin input2' name='origin' placeholder='Departure - Return' required></input>
                             <label className='label1'>Travel Dates</label>
                         </div>
                         <div className='input1'>

@@ -44,6 +44,11 @@
     display: flex;
     gap: 8px;
     align-items: center;
+
+}
+
+.butn form label {
+    margin: 0;
 }
 
 .pads {

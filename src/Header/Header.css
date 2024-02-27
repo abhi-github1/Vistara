@@ -38,8 +38,6 @@
 
     margin-left: 92px;
     margin-right: 80px;
-    /* display: flex;
-    justify-content: flex-end; */
 }
 
 .navbar {
@@ -52,9 +50,6 @@
 
 .list {
     margin: 0;
-}
-
-.navbar ul {
     display: flex;
     color: white;
     gap: 40px;
@@ -64,17 +59,14 @@
     text-decoration: none;
 }
 
-.navbar ul li {
-    color: white;
-}
-
 .logs li {
-    text-decoration: none;
     cursor: pointer;
+    color: white;
 }
 
 .logs li:hover {
     border-bottom: 2px solid #b69355;
+    margin: 0 auto;
 }
 
 .boot:hover {
