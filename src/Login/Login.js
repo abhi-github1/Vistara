@@ -9,19 +9,19 @@ function Login() {
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
     const navigate = useNavigate()
+    
 
     const handleSubmit = (e) => {
         e.preventDefault()
         axios.post('http://localhost:5500/login', { email, password })
             .then(res => {
                 console.log(res)
-                if (res.data === "success") {
-
+                // if (res.data === "success") {
                     navigate('/Home')
                     alert("login successful")
-                } else {
-                    alert("please check your username and password")
-                }
+                // } else {
+                //     alert("please check your username and password")
+                // }
 
             })
             .catch(err => console.log(err))
@@ -37,9 +37,10 @@ function Login() {
                                 <form className="bar" onSubmit={handleSubmit}>
                                     <input name="username" placeholder="Email or Club Vistara ID" onChange={(e) => setEmail(e.target.value)}></input>
                                     <input name="password" required placeholder="Password" type='password' onChange={(e) => setPassword(e.target.value)}></input>
+                                    <button className="btn" type="submit">Log In</button>
                                 </form>
                                 <div>
-                                    <button className="btn">Log In</button>
+                                    {/* <button className="btn" type="submit">Log In</button> */}
                                 </div>
                             </div>
                         </div>
